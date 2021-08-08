@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">ProjectTraining</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="txt_header_login">Đăng nhập</string>
+    <string name="hint_email">Nhập email</string>
+    <string name="hint_pass">Mật khẩu </string>
+    <string name="quen_mat_khau">Quên mật khẩu?</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="dang_nhap">Đăng nhập</string>
+    <string name="loi_dang_nhap">Email hoặc Password chưa chính xác hoặc không tồn tại</string>
+    <string name="action_home">Home</string>
+    <string name="action_calendar">Calendar</string>
+    <string name="action_account">Account</string>
+    <string name="cancel">Quay Lại</string>
+    <string name="btn_dat_phong">Đặt phòng</string>
+    <string name="ten_phong">Phòng hội nhâp</string>
+    <string name="so_nguoi">Tối đa: 18 người</string>
+    <string name="nhap_tieu_de">Nhập tiêu đề</string>
+    <string name="status_bookroom_fall">Khoảng thời gian bạn chọn đã có người khác đặt</string>
+    <string name="status_bookroom_success">Đặt phòng thành công</string>
+    <string name="oops">LƯU Ý!</string>
+    <string name="trang_thai_mang">Không có kết nối Internet</string>
+    <string name="kiem_tra">Vui lòng kiểm tra và thử lại</string>
+    <string name="btn_retry">Thử Lại</string>
+
+
+    <string name="book_room_btn">Book phòng</string>
+    <!--Fragment Calendar-->
+    <string name="title_fragment_calendar">Lịch họp</string>
+    <string name="btn_left">Tất cả</string>
+    <string name="btn_center">Tôi đặt</string>
+    <string name="btn_right">Được mời</string>
+
+    <string name="previous_day">Previous Day</string>
+    <string name="next_day">Next Day</string>
+    <string name="add_event">Add Event</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="scroll_to">Scroll To…</string>
+    <string name="edit_event_title">Title</string>
+    <string name="edit_event_location">Location</string>
+    <string name="edit_event_date">Date</string>
+    <string name="edit_event_start_time">Start Time</string>
+    <string name="edit_event_end_time">End Time</string>
+    <string name="edit_event_color">Color</string>
+    <string name="edit_event_delete">Delete</string>
+    <string name="scroll_target_time">Time…</string>
+    <string name="scroll_target_first_event_top">First Event Top</string>
+    <string name="scroll_target_first_event_bottom">First Event Bottom</string>
+    <string name="scroll_target_last_event_top">Last Event Top</string>
+    <string name="scroll_target_last_event_bottom">Last Event Bottom</string>
+
+    <string name="title_hoi_nhap_room">Phòng hội nhập</string>
+    <string name="max_18_nguoi">Max : 18 người</string>
+    <string name="title_sang_tao_room">Phòng sáng tạo</string>
+    <string name="max_10_nguoi">Max : 10 người</string>
+    <string name="title_toc_do_room">Phòng tốc độ</string>
+    <string name="max_4_nguoi">Max : 4 người</string>
+</resources>

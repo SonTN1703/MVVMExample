@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="RegisterViewModel"
+            type="com.example.projecttraining.register.RegisterViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/vector_445">
+
+                    <ImageButton
+
+                        android:layout_width="23dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/mainColor"
+                        android:src="@drawable/group_8158_backbtn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Đăng ký tài khoản"
+                        android:textColor="@color/white"
+                        android:textFontWeight="700"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/logo_ttc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="133dp"
+                    android:src="@drawable/logo_ttc_1" />
+
+                <RelativeLayout
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo_ttc"
+                    android:layout_marginTop="58dp">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape_btn_email_pass"
+                        android:gravity="center_vertical"
+                        android:hint="Email"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:text="@={RegisterViewModel.email}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/etEmail"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape_btn_email_pass"
+                        android:gravity="center_vertical"
+                        android:hint="Tên đặng nhập"
+                        android:inputType="textPassword"
+                        android:padding="12dp"
+                        android:text="@={RegisterViewModel.userName}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textSize="14sp" />
+                    <EditText
+                        android:layout_marginTop="12dp"
+                        android:id="@+id/etPhoneNumber"
+                        android:layout_below="@id/etUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape_btn_email_pass"
+                        android:gravity="center_vertical"
+                        android:hint="Số điện thoại"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:text="@={RegisterViewModel.sdt}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/etPhoneNumber"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape_btn_email_pass"
+                        android:gravity="center_vertical"
+                        android:hint="Mật khẩu"
+                        android:inputType="textPassword"
+                        android:padding="12dp"
+                        android:text="@={RegisterViewModel.password}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etPassword"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="16dp"
+                        android:weightSum="1">
+
+                        <Button
+                            android:id="@+id/btn_register"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_btn_login1"
+                            android:text="Xác nhận"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textFontWeight="700"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
+
+
