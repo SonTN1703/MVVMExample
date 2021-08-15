@@ -31,7 +31,6 @@
                     android:background="@drawable/vector_445">
 
                     <ImageButton
-
                         android:layout_width="23dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
@@ -120,6 +119,7 @@
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/shape_btn_login1"
+                            android:onClick="@{()->LoginViewModel.onRegisterClicked()}"
                             android:text="Đăng ký"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
@@ -135,7 +135,6 @@
                             android:layout_weight="1"
                             android:background="@drawable/shape_btn_login1"
                             android:onClick="@{()->LoginViewModel.onLoginClicked()}"
-                            toastMessage="@{LoginViewModel.toastMessage}"
                             android:text="@string/dang_nhap"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
